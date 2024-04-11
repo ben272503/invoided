@@ -14,13 +14,19 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    app_page1.cpp \
-    login.cpp
+    login.cpp \
+    page1.cpp
 
 HEADERS  += mainwindow.h \
-    app_page1.h \
-    login.h
+    login.h \
+    page1.h \
+    global_login.h
 
 FORMS    += mainwindow.ui \
-    app_page1.ui \
-    login.ui
+    login.ui \
+    page1.ui
+
+DISTFILES += \
+    background.jpeg \
+    images/background.jpeg \
+    images/401182.png

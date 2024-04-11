@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Page1</class>
+ <widget class="QMainWindow" name="Page1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>571</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>patate</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>pomme</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>fraise</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>nom</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>prix</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>quantité</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>total</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>340</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInvoided">
+    <property name="title">
+     <string>invoided</string>
+    </property>
+    <addaction name="actionD_connexion"/>
+   </widget>
+   <addaction name="menuInvoided"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionD_connexion">
+   <property name="text">
+    <string>déconnexion</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
