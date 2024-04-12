@@ -8,6 +8,7 @@ login::login(QWidget *parent) :
     ui(new Ui::login)
 {
     ui->setupUi(this);
+    this->setFixedSize(325,250);
 }
 
 login::~login()
@@ -23,6 +24,7 @@ void login::on_login_button_clicked()
     if(username == "test" && password == "test") {
         close();
         page1 = new Page1();
+        page1->setWindowState(Qt::WindowMaximized);
         page1->show();
         globl = 1;
 

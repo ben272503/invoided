@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>background.jpeg</file>
+        <file>7572360.ico</file>
+        <file>7572360 win.ico</file>
+    </qresource>
+    <qresource prefix="/Files">
+        <file>exemple.txt</file>
+    </qresource>
+</RCC>

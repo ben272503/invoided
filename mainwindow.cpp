@@ -13,8 +13,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("images/background.jpeg");
-    ui->label_pic->setPixmap(pix);
+    QPixmap pix(":/resources/background.jpeg");
+    ui->label_pic->setPixmap(pix.scaled(570,300,Qt::KeepAspectRatio));
+    this->setFixedSize(570,273);
 //    ui->statusBar->showMessage(QDir::currentPath());
 }
 
@@ -28,7 +29,7 @@ void MainWindow::on_pushButton_clicked()
     login Loginpage;
     Loginpage.setModal(true);
     Loginpage.exec();
-    if ((globl = 1)) {
+    if (globl == 1) {
         close();
     }
 }

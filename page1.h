@@ -15,6 +15,11 @@ public:
     explicit Page1(QWidget *parent = 0);
     ~Page1();
 
+private slots:
+    void on_pushButtonUpdateDB_clicked();
+
+    void on_pushButton_folder_clicked();
+
 private:
     Ui::Page1 *ui;
 };

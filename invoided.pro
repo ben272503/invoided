@@ -30,3 +30,8 @@ DISTFILES += \
     background.jpeg \
     images/background.jpeg \
     images/401182.png
+
+RESOURCES += \
+    resources.qrc
+
+RC_ICONS = 7572360.ico
