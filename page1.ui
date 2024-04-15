@@ -30,7 +30,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_2">
+         <widget class="QLabel" name="Name_connection">
           <property name="text">
            <string>john doe</string>
           </property>
@@ -120,59 +120,56 @@
            <widget class="QTableWidget" name="tableWidget">
             <row>
              <property name="text">
-              <string>patate</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>pomme</string>
-             </property>
-            </row>
-            <row>
-             <property name="text">
-              <string>fraise</string>
+              <string>perunna</string>
              </property>
             </row>
             <column>
              <property name="text">
-              <string>nom</string>
+              <string>ean13</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>prix</string>
+              <string>bulk</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>quantité</string>
+              <string>stock</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>total</string>
+              <string>stock_kg</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>entreprise</string>
+              <string>price</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>mail</string>
+              <string>price_kg</string>
              </property>
             </column>
             <column>
              <property name="text">
-              <string>date</string>
+              <string>discount</string>
              </property>
             </column>
-            <item row="0" column="0">
+            <column>
              <property name="text">
-              <string/>
+              <string>category</string>
              </property>
-            </item>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_Get">
+            <property name="text">
+             <string>try to Get</string>
+            </property>
            </widget>
           </item>
          </layout>
@@ -181,6 +178,13 @@
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_invo">
+          <property name="text">
+           <string>Start invoice</string>
+          </property>
+         </widget>
+        </item>
         <item>
          <spacer name="horizontalSpacer">
           <property name="orientation">
@@ -195,23 +199,23 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="pushButton_NewPursh">
           <property name="text">
-           <string>Start invoice</string>
+           <string>New purchase</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_modTable">
+         <widget class="QPushButton" name="pushButton_AddElem">
           <property name="text">
-           <string>modify table</string>
+           <string>Add element </string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButtonUpdateDB">
           <property name="text">
-           <string>update database</string>
+           <string>Update database</string>
           </property>
          </widget>
         </item>
@@ -236,12 +240,24 @@
     </property>
     <addaction name="actionD_connexion"/>
    </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Data</string>
+    </property>
+    <addaction name="actionRefresh_Data"/>
+   </widget>
    <addaction name="menuInvoided"/>
+   <addaction name="menuEdit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionD_connexion">
    <property name="text">
-    <string>déconnexion</string>
+    <string>disconnect</string>
+   </property>
+  </action>
+  <action name="actionRefresh_Data">
+   <property name="text">
+    <string>Refresh Data</string>
    </property>
   </action>
  </widget>
